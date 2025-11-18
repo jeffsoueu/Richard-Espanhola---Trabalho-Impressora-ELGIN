@@ -1,7 +1,5 @@
 # Richard-Espanhola---Trabalho-Impressora-ELGIN
 
-Aqui está o texto revisado e estruturado em Markdown para uma documentação de GitHub, garantindo clareza e organização.
-
 📖 Manual de Instruções: Controlador de Impressora (Java/JNA) 🖨️
 Este programa funciona como um controle remoto para a sua impressora (fiscal ou não fiscal), permitindo o envio de comandos como "Imprimir Texto", "Abrir Gaveta" ou "Cortar Papel".
 
