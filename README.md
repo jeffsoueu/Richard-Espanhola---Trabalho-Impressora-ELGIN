@@ -22,7 +22,32 @@ Seu programa depende do arquivo da impressora E1_Impressora01.dll estar em um lo
 
 Abra a pasta que você acabou de extrair e confirme se o arquivo E1_Impressora01.dll está lá.
 
-⚠️ Importante: Seu código está programado para buscar esse arquivo em um caminho fixo (como C:\Users\eli_nascimento\...). Se você moveu a pasta para outro lugar, o programa pode não funcionar. Se o projeto der erro ao tentar abrir a conexão, você precisará pedir ajuda para ajustar este caminho no código.
+⚠️ IMPORTANTE (Ajuste Crítico): O código busca a DLL em um caminho fixo de outra máquina. É OBRIGATÓRIO alterar o código para que ele encontre o arquivo na sua máquina. Se você pular este passo, o programa NÃO VAI FUNCIONAR e dará erro.
+
+Como Pegar e Colar o Novo Caminho (Passo a Passo Mais Claro)
+Encontre o Novo Caminho:
+
+Vá até a pasta no seu computador onde você extraiu o arquivo E1_Impressora01.dll.
+
+Clique na barra de endereço (aquela barra no topo da janela do Windows Explorer que mostra o caminho, como Este Computador > Documentos > MinhaPasta).
+
+Clique com o botão direito e selecione "Copiar Endereço como Texto". Isso copiará o caminho completo (ex: C:\Users\SeuNome\Downloads\MinhaPasta).
+
+Edite o Código no IntelliJ:
+
+No IntelliJ, abra o arquivo Main.java.
+
+Procure a linha que contém o caminho antigo da DLL: "C:\\Users\\eli_nascimento\\Downloads\\Java-Aluno Graduacao\\Java-Aluno Graduacao\\E1_Impressora01.dll"
+
+Você precisa substituir o caminho entre as aspas ("...") pelo caminho que você acabou de copiar, mas com uma regra extra do Java:
+
+A Regra da Barra Dupla (\\): O Java exige que você use duas barras invertidas (\\) para cada uma que o seu Windows usa (\).
+
+Seu caminho copiado: C:\Users\SeuNome\MinhaPasta\E1_Impressora01.dll
+
+Como deve ficar no código: C:\\Users\\SeuNome\\MinhaPasta\\E1_Impressora01.dll
+
+Finalize: Cole o novo caminho ajustado no lugar do antigo. Salve o arquivo (File > Save All) antes de executar o programa.
 
 2. 💻 Abrindo e Executando o Projeto no IntelliJ
 Com os arquivos prontos, vamos usar o IntelliJ IDEA para abrir e executar o projeto.
